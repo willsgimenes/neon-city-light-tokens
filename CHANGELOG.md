@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/willsgimenes/neon-city-light-tokens/compare/v1.0.1...v1.1.0) (2021-02-28)
+
+
+### Features
+
+* **token-update:** remove unused tokens ([#2](https://github.com/willsgimenes/neon-city-light-tokens/issues/2)) ([9a8b0bb](https://github.com/willsgimenes/neon-city-light-tokens/commit/9a8b0bbd540954fc565713cb6e29dfbbaef49142))
+
 ## [1.0.1](https://github.com/willsgimenes/neon-city-light-tokens/compare/v1.0.0...v1.0.1) (2021-02-28)
 
 
