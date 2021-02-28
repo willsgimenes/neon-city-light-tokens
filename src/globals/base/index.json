@@ -2,7 +2,7 @@
   "base": {
     "border": {
       "radius": {
-        "value": "10px"
+        "value": "8px"
       }
     }
   }
