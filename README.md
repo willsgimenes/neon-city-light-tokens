@@ -1,4 +1,4 @@
-# NEON CITY LIGHTS TOKEN 🌆
+# NEON CITY LIGHT TOKENS 🌆
 
 <img src="https://raw.githubusercontent.com/willsgimenes/neon-city-light-token/main/neon-city-banner.png" alt="" align="center" />
 
