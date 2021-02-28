@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/willsgimenes/neon-city-light-tokens/compare/v1.1.0...v1.2.0) (2021-02-28)
+
+
+### Features
+
+* **base-color:** adding base color to tokens ([#3](https://github.com/willsgimenes/neon-city-light-tokens/issues/3)) ([901f879](https://github.com/willsgimenes/neon-city-light-tokens/commit/901f8795a5da23d55e61e23df5a20f808e2800c5))
+
 # [1.1.0](https://github.com/willsgimenes/neon-city-light-tokens/compare/v1.0.1...v1.1.0) (2021-02-28)
 
 
