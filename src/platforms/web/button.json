@@ -1,10 +1,10 @@
 {
-    "button": {
-        "height": {
-            "value": "44px"
-        },
-        "height_small": {
-            "value": "40px"
-        }
+  "button": {
+    "height": {
+      "value": "44px"
+    },
+    "height_small": {
+      "value": "40px"
     }
+  }
 }
