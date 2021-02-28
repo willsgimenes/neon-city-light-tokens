@@ -7,6 +7,10 @@
     "secondary": {
       "value": "{alias.color.brand.secondary.value}",
       "type": "color"
+    },
+    "tertiary": {
+      "value": "{alias.color.brand.tertiary.value}",
+      "type": "color"
     }
   }
 }
