@@ -1,64 +1,62 @@
 const StyleDictionaryPackage = require('style-dictionary');
 
-function getStyleDictionaryConfig(brand, platform) {
-  return {
-    source: [
-      `src/brands/${brand}/*.json`,
-      'src/globals/**/*.json',
-      `src/platforms/${platform}/*.json`,
-    ],
-    platforms: {
-      'web/js': {
-        transformGroup: 'tokens-js',
-        buildPath: `dist/web/${brand}/`,
-        prefix: 'token',
-        files: [
-          {
-            destination: 'tokens.es6.js',
-            format: 'javascript/es6',
-          },
-        ],
-      },
-      'web/json': {
-        transformGroup: 'tokens-json',
-        buildPath: `dist/web/${brand}/`,
-        prefix: 'token',
-        files: [
-          {
-            destination: 'tokens.json',
-            format: 'json/flat',
-          },
-        ],
-      },
-      'web/scss': {
-        transformGroup: 'tokens-scss',
-        buildPath: `dist/web/${brand}/`,
-        prefix: 'token',
-        files: [
-          {
-            destination: 'tokens.scss',
-            format: 'scss/variables',
-          },
-        ],
-      },
-      styleguide: {
-        transformGroup: 'styleguide',
-        buildPath: `dist/styleguide/`,
-        prefix: 'token',
-        files: [
-          {
-            destination: `${platform}_${brand}.json`,
-            format: 'json/flat',
-          },
-          {
-            destination: `${platform}_${brand}.scss`,
-            format: 'scss/variables',
-          },
-        ],
-      },
+const getStyleDictionaryConfig = (brand, platform) => ({
+  source: [
+    `src/brands/${brand}/*.json`,
+    'src/globals/**/*.json',
+    `src/platforms/${platform}/*.json`,
+  ],
+  platforms: {
+    'web/js': {
+      transformGroup: 'tokens-js',
+      buildPath: `dist/web/${brand}/`,
+      prefix: 'token',
+      files: [
+        {
+          destination: 'tokens.es6.js',
+          format: 'javascript/es6',
+        },
+      ],
     },
-  };
-}
+    'web/json': {
+      transformGroup: 'tokens-json',
+      buildPath: `dist/web/${brand}/`,
+      prefix: 'token',
+      files: [
+        {
+          destination: 'tokens.json',
+          format: 'json/flat',
+        },
+      ],
+    },
+    'web/scss': {
+      transformGroup: 'tokens-scss',
+      buildPath: `dist/web/${brand}/`,
+      prefix: 'token',
+      files: [
+        {
+          destination: 'tokens.scss',
+          format: 'scss/variables',
+        },
+      ],
+    },
+    styleguide: {
+      transformGroup: 'styleguide',
+      buildPath: `dist/styleguide/`,
+      prefix: 'token',
+      files: [
+        {
+          destination: `${platform}_${brand}.json`,
+          format: 'json/flat',
+        },
+        {
+          destination: `${platform}_${brand}.scss`,
+          format: 'scss/variables',
+        },
+      ],
+    },
+  },
+});
 
 StyleDictionaryPackage.registerFormat({
   name: 'json/flat',
@@ -118,12 +116,9 @@ console.log('Build started...');
       getStyleDictionaryConfig(brand, platform)
     );
 
-    if (platform === 'web') {
-      StyleDictionary.buildPlatform('web/js');
-      StyleDictionary.buildPlatform('web/json');
-      StyleDictionary.buildPlatform('web/scss');
-    }
-
+    StyleDictionary.buildPlatform('web/js');
+    StyleDictionary.buildPlatform('web/json');
+    StyleDictionary.buildPlatform('web/scss');
     StyleDictionary.buildPlatform('styleguide');
 
     console.log('\nEnd processing');
