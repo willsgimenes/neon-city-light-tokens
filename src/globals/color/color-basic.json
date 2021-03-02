@@ -1,15 +1,27 @@
 {
   "color": {
-    "primary": {
+    "neon_blue": {
       "value": "{alias.color.brand.primary.value}",
       "type": "color"
     },
-    "secondary": {
+    "neon_red": {
       "value": "{alias.color.brand.secondary.value}",
       "type": "color"
     },
-    "tertiary": {
+    "neon_purple": {
       "value": "{alias.color.brand.tertiary.value}",
+      "type": "color"
+    },
+    "black_100": {
+      "value": "#000",
+      "type": "color"
+    },
+    "black_90": {
+      "value": "#333",
+      "type": "color"
+    },
+    "white_100": {
+      "value": "#fff",
       "type": "color"
     }
   }
